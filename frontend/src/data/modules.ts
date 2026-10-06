@@ -99,7 +99,7 @@ export const MODULES: ModuleMeta[] = [
     statuses: ["待清理", "清理中", "已清理", "已损坏"],
     actions: ["安排清理", "确认完成", "登记损坏"],
     actionTargets: {"安排清理": "清理中", "确认完成": "已清理", "登记损坏": "已损坏"},
-    metrics: ["待清理栅体", "已清理栅体", "最大压差"],
+    metrics: ["待清理栅体", "已清理栅体", "压差超限", "已损坏"],
   },
   {
     key: "overhaul",
@@ -176,7 +176,7 @@ export const MODULES: ModuleMeta[] = [
     statuses: ["待校验", "正常", "异常", "已退出"],
     actions: ["提交校验", "标记异常", "退出运行"],
     actionTargets: {"提交校验": "正常", "标记异常": "异常", "退出运行": "已退出"},
-    metrics: ["正常保护装置", "待校验装置", "即将到期装置"],
+    metrics: ["在账保护装置", "正常装置", "待校验装置", "30天内到期", "异常装置"],
   },
   {
     key: "defect",

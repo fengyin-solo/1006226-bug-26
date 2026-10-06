@@ -10,6 +10,7 @@ const Gate = () => import('@/views/gate/index.vue')
 const Seepage = () => import('@/views/seepage/index.vue')
 const Displacement = () => import('@/views/displacement/index.vue')
 const Trashrack = () => import('@/views/trashrack/index.vue')
+const TrashrackCleaning = () => import('@/views/trashrack/cleaning.vue')
 const Overhaul = () => import('@/views/overhaul/index.vue')
 const Bearing = () => import('@/views/bearing/index.vue')
 const Cooling = () => import('@/views/cooling/index.vue')
@@ -17,6 +18,7 @@ const Hydrology = () => import('@/views/hydrology/index.vue')
 const Flood = () => import('@/views/flood/index.vue')
 const Generation = () => import('@/views/generation/index.vue')
 const Protection = () => import('@/views/protection/index.vue')
+const ProtectionLedger = () => import('@/views/protection/ledger.vue')
 const Defect = () => import('@/views/defect/index.vue')
 const Crew = () => import('@/views/crew/index.vue')
 const Spare = () => import('@/views/spare/index.vue')
@@ -34,6 +36,7 @@ const router = createRouter({
     { path: '/seepage', name: 'seepage', component: Seepage },
     { path: '/displacement', name: 'displacement', component: Displacement },
     { path: '/trashrack', name: 'trashrack', component: Trashrack },
+    { path: '/trashrack/cleaning', name: 'trashrack-cleaning', component: TrashrackCleaning },
     { path: '/overhaul', name: 'overhaul', component: Overhaul },
     { path: '/bearing', name: 'bearing', component: Bearing },
     { path: '/cooling', name: 'cooling', component: Cooling },
@@ -41,6 +44,7 @@ const router = createRouter({
     { path: '/flood', name: 'flood', component: Flood },
     { path: '/generation', name: 'generation', component: Generation },
     { path: '/protection', name: 'protection', component: Protection },
+    { path: '/protection/ledger', name: 'protection-ledger', component: ProtectionLedger },
     { path: '/defect', name: 'defect', component: Defect },
     { path: '/crew', name: 'crew', component: Crew },
     { path: '/spare', name: 'spare', component: Spare },
